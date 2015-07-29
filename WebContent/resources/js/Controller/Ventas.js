@@ -117,7 +117,7 @@ appVentas.controller('contEditarVentas', function($scope,ServiceEditarVenta) {
 				}
 					$scope.btnInicio = function(){
 						$location.url('/VistaAdmin');
-					}
+					} 
 					
 					$scope.btnBuscar = function(){
 						$location.url('/BuscarVentas');
