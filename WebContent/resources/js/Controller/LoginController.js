@@ -17,8 +17,13 @@ appClientes.controller('contLogin', function($scope, $location, ServiceLogin) {
 			    			$scope.password = '';
 			    			return;
 		    			}else if (data.tipo=="Login"){
+		    				
+		    				ServiceLogin.setToken(data.mensaje);
+		    				
 			    			if(data.tipoUsuario=="Admin"){
+			    				console.log(ServiceLogin.getToken());
 			    				$location.url('/PrincipalAdmin');
+			    				
 			    			}else if(data.tipoUsuario=="Secre"){
 			    				$location.url('/');
 			    			}else{
