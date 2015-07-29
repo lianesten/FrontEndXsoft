@@ -4,15 +4,15 @@ var appClientes = angular.module('XsoftFrontend');
 
 
 //Controlador para manejar el formulario de autenticacion
-appClientes.controller('contLogin', function($scope,$location) {
-		    //la funci�n login que llamamos en la vista llama a la funci�n
-		    //login de la factoria auth pasando lo que contiene el campo
-		    //de texto del formulario
-	
-	console.log('Llama el controller');
-//		    $scope.login = function(){
-//		    	
-//		    	Usuarios.validar($scope.nombreUsuario, $scope.pws).success(function(data){
+appClientes.controller('contLogin', function($scope, $location, ServiceLogin) {
+		
+		    $scope.username;
+		    $scope.password;
+		    
+		    $scope.login = function(){
+		    	
+		    	ServiceLogin.validar($scope.username, $scope.password).success(function(data){
+		    		console.log(data);
 //		    		if(data != ''){
 //		    			//alert(data);
 //		    			$scope.nombreUsuario = '';
@@ -20,9 +20,9 @@ appClientes.controller('contLogin', function($scope,$location) {
 //		    			
 //		    			return;
 //		    		}
-//		    		$location.url('/Clientes');
-//		    	});
-//		        
-//		    };
+		    		//$location.url('/Clientes');
+		    	});
+		        
+		    };
 		    
 	});
