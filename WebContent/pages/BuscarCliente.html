@@ -1,0 +1,43 @@
+<div>
+	<h1>:::Buscar Cliente:::</h1>
+
+	<form ng-submit="buscar()">
+		<div>
+			<label> Id Cliente: </label> <input type="text" required="required"
+				placeholder="Digite numero Id" ng-model="numeroIdCliente" />
+			<button class="btn btn-primary" value="BuscarCliente" type="submit">Buscar
+				Cliente</button>
+		</div>
+	</form>
+	<hr />
+	
+	
+	  <table class="table">
+    <thead>
+      <tr>
+      	<th>numeroId</th>
+        <th>nombres</th>
+        <th>apellidos</th>
+        <th>telefonoFijo</th>
+        <th>telefonoMovil</th>
+        <th>email</th>
+        <th>direccion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{cliente.numeroId}}</td>
+        <td>{{cliente.nombres}}</td>
+        <td>{{cliente.apellidos}}</td>
+        <td>{{cliente.telefonoFijo}}</td>
+        <td>{{cliente.telefonoMovil}}</td>
+        <td>{{cliente.email}}</td>
+        <td>{{cliente.direccion}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+
