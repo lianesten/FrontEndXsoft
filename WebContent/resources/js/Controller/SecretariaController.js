@@ -1,7 +1,8 @@
 var appClientes = angular.module('XsoftFrontend');
 
+
 //Controller para servicio buscar cliente
-appClientes.controller('ClienteController', function($scope, $http,$location, ServicioCliente, ServiceLogin) {
+appClientes.controller('SecreController', function($scope, $http,$location, ServicioCliente, ServiceLogin) {
 	
 	$scope.listaCliente ='' ;
 	var usuarioCrea= "1458796";
@@ -10,11 +11,11 @@ appClientes.controller('ClienteController', function($scope, $http,$location, Se
 		console.log(data);
 		if(data != ''){
 			if(data.tipo=="Error"){
-    			return;
+  			return;
 			}else if (data.tipo=="Info"){
-    			$scope.listaCliente = data.mensaje;
-    			console.log('ListaCliente=',$scope.listaCliente);
-    		}
+  			$scope.listaCliente = data.mensaje;
+  			console.log('ListaCliente=',$scope.listaCliente);
+  		}
 		}
 	});
 	

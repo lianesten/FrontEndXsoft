@@ -33,5 +33,11 @@ appClientes.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'pages/EliminarCliente.html', 
 		controller : 'ClienteController'
 	});
+	
+	
+	$routeProvider.when('/PrincipalSecre', {
+		templateUrl : 'pages/VistaSecretaria.html', 
+		controller : 'ClienteController'
+	});
 
 } ]);

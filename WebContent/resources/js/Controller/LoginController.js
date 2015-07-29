@@ -13,6 +13,7 @@ appClientes.controller('contLogin', function($scope, $location, ServiceLogin) {
 		    		console.log(data);
 		    		if(data != ''){
 		    			if(data.tipo=="Error"){
+		    				alert(data.mensaje);
 			    			$scope.username = '';
 			    			$scope.password = '';
 			    			return;
@@ -20,12 +21,14 @@ appClientes.controller('contLogin', function($scope, $location, ServiceLogin) {
 		    				
 		    				ServiceLogin.setToken(data.mensaje);
 		    				
-			    			if(data.tipoUsuario=="Admin"){
+		    				if(data.tipoUsuario=="Secre"){
+			    				console.log(ServiceLogin.getToken());
+			    				$location.url('/PrincipalSecre');
+			    				
+			    			}else if(data.tipoUsuario=="Admin"){
 			    				console.log(ServiceLogin.getToken());
 			    				$location.url('/PrincipalAdmin');
 			    				
-			    			}else if(data.tipoUsuario=="Secre"){
-			    				$location.url('/');
 			    			}else{
 			    				$location.url('/');
 			    			}

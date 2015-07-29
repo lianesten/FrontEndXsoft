@@ -1,7 +1,8 @@
-
+<meta charset="utf-8">
 <div class="header clearfix">
 	<nav>
 		<ul class="nav nav-pills pull-right">
+		<li role="presentation" class="active"><button type="submit" class="btn btn-primary" ng-click="cerrarSession()">Cerrar Sesión</button></li>
 			<li role="presentation" class="active"><button type="button"
 					class="btn btn-primary" ng-click="btnInicio()">Inicio</button></li> 
 			<li>
@@ -50,9 +51,9 @@
 	<h2>Llenar los datos a continuacion para crear un nuevo cliente:</h2>
 	<form role="form" ng-submit="crearCliente()">
 		<div class="form-group">
-			<label for="identificacionCliente">Identificación:</label> <input
+			<label for="identificacionCliente">IdentificaciÃ³n:</label> <input
 				type="text" class="form-control" id="identificacionCliente"
-				placeholder="Ingresa el numero de identificación del cliente"
+				placeholder="Ingresa el numero de identificaciÃ³n del cliente"
 				required="required" ng-model="identificacionNuevoCliente">
 		</div>
 		<div class="form-group">
@@ -68,12 +69,12 @@
 		<div class="form-group">
 			<label for="telefonoFijoCliente">Telefono fijo:</label> <input
 				type="text" class="form-control" id="telefonoFijoCliente"
-				placeholder="Ingresa el teléfono fijo  del cliente" ng-model="telefonoFijoNuevoCliente">
+				placeholder="Ingresa el telÃ©fono fijo  del cliente" ng-model="telefonoFijoNuevoCliente">
 		</div>
 		<div class="form-group">
 			<label for="telefonoMovilCliente">Telefono Movil:</label> <input
 				type="text" class="form-control" id="telefonoMovilCliente"
-				placeholder="Ingresa el teléfono móvil  del cliente" ng-model="telefonoMovilNuevoCliente">
+				placeholder="Ingresa el telÃ©fono mÃ³vil  del cliente" ng-model="telefonoMovilNuevoCliente">
 		</div>
 		<div class="form-group">
 			<label for="email">E-mail:</label> <input type="text"
@@ -81,9 +82,9 @@
 				placeholder="Ingresa el correo electronico  del cliente" ng-model="emailNuevoCliente">
 		</div>
 		<div class="form-group">
-			<label for="direccion">Dirección:</label> <input type="text"
+			<label for="direccion">DirecciÃ³n:</label> <input type="text"
 				class="form-control" id="direccionCliente"
-				placeholder="Ingresa la dirección de residencia  del cliente" ng-model="direccionNuevoCliente">
+				placeholder="Ingresa la direcciÃ³n de residencia  del cliente" ng-model="direccionNuevoCliente">
 		</div>
 		<button type="submit" class="btn btn-primary">Guardar Cliente</button>
 	</form>
