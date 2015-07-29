@@ -1,0 +1,34 @@
+
+<meta charset="utf-8">
+<div>
+	<div id="EditarVentas" class="modal show" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="text-center">Editar Ventas</h1>
+				</div>
+				<div class="modal-body">
+					<form class="form col-md-12 center-block">
+						<div class="form-group">
+							<input type="text" class="form-control input-lg"
+								placeholder="IdVenta" ng-model="IdVent">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg"
+								placeholder="IdCliente" ng-model="IdClien">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg"
+								placeholder="IdUsuario" ng-model="IdUsu">
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="EditarV()" >Editar</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer"></div><!-- Caja contenedora -->
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,76 @@
+	<div class="header clearfix">
+		<nav>
+			<ul class="nav nav-pills pull-right">
+				<li role="presentation" class="active"><button type="button" class="btn btn-primary" ng-click="btnInicio()">Inicio</button></li>
+				<li>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button"
+							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							Clientes <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a ng-click="btnBuscar()">Buscar</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a ng-click="btnCrear()">Crear</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a ng-click="btnEditar()">Editar</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a ng-click="btnEliminar()">Eliminar</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button"
+							id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							Ventas <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a ng-click="btnBuscar()">Buscar</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a ng-click="btnCrear()">Crear</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a ng-click="btnEditar()">Editar</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a ng-click="btnEliminar()">Eliminar</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<h3 class="text-muted">Xsoft - Proyecto Ingenieria web</h3>
+	</div>
+	<h1 class="text-center">:::Buscar Venta:::</h1>
+
+	<form ng-submit="BuscarV()">
+		<div>
+			<label> Id Cliente: </label> <input type="text" required="required"
+				placeholder="Digite numero Id de la venta" ng-model="idVenta" />
+			<button class="btn btn-primary" value="BuscarVenta" type="submit">Buscar
+				Cliente</button>
+		</div>
+	</form>
+	<hr size="2"/>
+	
+	
+	  <table class="table">
+    <thead>
+      <tr>
+      	<th>Id Venta</th>
+        <th>Id Usuario</th>
+        <th>Id CLiente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{Venta.idUsu}}
+        <td>{{Venta.idVent}}</td>
+        <td>{{Venta.idCliente}}</td>
+              </tr>
+
+    </tbody>
+  </table>
+
+</div>
