@@ -106,7 +106,7 @@ appVentas.service("ServiceCrearVenta",function ($http){
 
 //Controlador editar Ventas
 //falta webservice
-appVentas.controller('contEditarVentas', function($scope,ServiceEditarVenta) { 
+appVentas.controller('contEditarVentas', function($scope,ServiceEditarVenta) {  
 		    
 				$scope.idClien;
 				$scope.idUsu
