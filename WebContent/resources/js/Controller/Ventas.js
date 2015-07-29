@@ -113,7 +113,7 @@ appVentas.controller('contEditarVentas', function($scope,ServiceEditarVenta) {
 				$scope.EditarV = function(){ 
 					ServiceEdtirarVenta.validar($scope.idVent, $scope.idClien, $scope.idUsu).success(function(data){
 					console.log(data);	
-					});
+					}); 
 				}
 					$scope.btnInicio = function(){
 						$location.url('/VistaAdmin');
