@@ -2,7 +2,6 @@
 //Se crea el modulo y se le inyecta ngRoute que nos permite tener varias vistas
 var appClientes = angular.module('XsoftFrontend');
 
-
 //Controlador para manejar el formulario de autenticacion
 appClientes.controller('contLogin', function($scope,$location) {
 		    //la funci�n login que llamamos en la vista llama a la funci�n

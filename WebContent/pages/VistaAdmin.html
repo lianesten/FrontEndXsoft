@@ -3,7 +3,8 @@
 	<div class="header clearfix">
 		<nav>
 			<ul class="nav nav-pills pull-right">
-				<li role="presentation" class="active"><button type="button" class="btn btn-primary">Inicio</button></li>
+				<li role="presentation" class="active"><button type="button"
+						class="btn btn-primary" ng-click="btnInicio()">Inicio</button></li>
 				<li>
 					<div class="dropdown">
 						<button class="btn btn-primary dropdown-toggle" type="button"
@@ -12,13 +13,13 @@
 							Clientes <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="www.google.com">Buscar</a></li>
+							<li><a ng-click="btnBuscar()">Buscar</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="www.google.com">Crear</a></li>
+							<li><a ng-click="btnCrear()">Crear</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="www.google.com">Editar</a></li>
+							<li><a ng-click="btnEditar()">Editar</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="www.google.com">Eliminar</a></li>
+							<li><a ng-click="btnEliminar()">Eliminar</a></li>
 						</ul>
 					</div>
 				</li>
@@ -30,19 +31,19 @@
 							Ventas <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="www.google.com">Buscar</a></li>
+							<li><a ng-click="">Buscar</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="www.google.com">Crear</a></li>
+							<li><a ng-click="">Crear</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="www.google.com">Editar</a></li>
+							<li><a ng-click="">Editar</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="www.google.com">Eliminar</a></li>
+							<li><a ng-click="">Eliminar</a></li>
 						</ul>
 					</div>
 				</li>
 			</ul>
 		</nav>
-		<h3 class="text-muted">Xsoft - Proyecto Ingeniería web</h3>
+		<h3 class="text-muted">Xsoft - Proyecto Ingenieria web</h3>
 	</div>
 
 
@@ -63,4 +64,3 @@
 	</footer>
 
 </div>
-<!-- /container -->
