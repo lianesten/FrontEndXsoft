@@ -98,7 +98,7 @@ appVentas.service("ServiceCrearVenta",function ($http){
 			params:{
 				idVenta : idVent,
 				idCliente : idClien,
-				idUsuario : idUsu
+				idUsuario : idUsu 
 				   }
 		});
 	}
@@ -112,7 +112,7 @@ appVentas.controller('contEditarVentas', function($scope,ServiceEditarVenta) {
 				$scope.idUsu
 				$scope.EditarV = function(){ 
 					ServiceEdtirarVenta.validar($scope.idVent, $scope.idClien, $scope.idUsu).success(function(data){
-					console.log(data);	
+					console.log(data);	 
 					}); 
 				}
 					$scope.btnInicio = function(){
