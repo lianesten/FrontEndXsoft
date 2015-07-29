@@ -68,14 +68,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>{{cliente.numeroId}}</td>
-        <td>{{cliente.nombres}}</td>
-        <td>{{cliente.apellidos}}</td>
-        <td>{{cliente.telefonoFijo}}</td>
-        <td>{{cliente.telefonoMovil}}</td>
-        <td>{{cliente.email}}</td>
-        <td>{{cliente.direccion}}</td>
+      <tr ng-repeat="item in listaCliente">
+        <td>{{item.numeroId}}</td>
+        <td>{{item.nombres}}</td>
+        <td>{{item.apellidos}}</td>
+        <td>{{item.telefonoFijo}}</td>
+        <td>{{item.telefonoMovil}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.direccion}}</td>
       </tr>
 
     </tbody>

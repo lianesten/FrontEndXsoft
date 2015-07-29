@@ -11,27 +11,27 @@ appClientes.config([ '$routeProvider', function($routeProvider) {
 	
 	$routeProvider.when('/PrincipalAdmin', {
 		templateUrl : 'pages/VistaAdmin.html', 
-		controller : 'contAdmin'
+		controller : 'ClienteController'
 	});
 	
 	$routeProvider.when('/BuscarCliente', {
 		templateUrl : 'pages/BuscarCliente.html', 
-		controller : 'BuscarClienteController'
+		controller : 'ClienteController'
 	});
 	
 	$routeProvider.when('/CrearCliente', {
 		templateUrl : 'pages/CrearCliente.html', 
-		controller : 'CrearClienteController'
+		controller : 'ClienteController'
 	});
 	
 	$routeProvider.when('/EditarCliente', {
 		templateUrl : 'pages/EditarCliente.html', 
-		controller : 'EditarClienteController'
+		controller : 'ClienteController'
 	});
 	
 	$routeProvider.when('/EliminarCliente', {
 		templateUrl : 'pages/EliminarCliente.html', 
-		controller : 'EliminarClienteController'
+		controller : 'ClienteController'
 	});
 
 } ]);

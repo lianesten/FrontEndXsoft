@@ -43,3 +43,30 @@
 		<h3 class="text-muted">Xsoft - Proyecto Ingenieria web</h3>
 	</div>
 	<h1 class="text-center">:::Editar Cliente:::</h1>
+	
+	 <table class="table">
+    <thead>
+      <tr>
+      	<th>numeroId</th>
+        <th>nombres</th>
+        <th>apellidos</th>
+        <th>telefonoFijo</th>
+        <th>telefonoMovil</th>
+        <th>email</th>
+        <th>direccion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in listaCliente">
+        <td>{{item.numeroId}}</td>
+        <td>{{item.nombres}}</td>
+        <td>{{item.apellidos}}</td>
+        <td>{{item.telefonoFijo}}</td>
+        <td>{{item.telefonoMovil}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.direccion}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+	

@@ -17,5 +17,25 @@ appClientes.controller('contAdmin', function($scope, $location, ServiceLogin) {
 	    		$location.url('/');
 	    	});
 		};
+		
+		$scope.btnInicio = function(){
+			$location.url('/PrincipalAdmin')
+		}
+		
+		$scope.btnBuscar = function(){
+			$location.url('/BuscarCliente')
+		}
+		
+		$scope.btnCrear = function() {
+			$location.url('/CrearCliente');
+		}
+		
+		$scope.btnEditar = function() {
+			$location.url('/EditarCliente');
+		}
+		
+		$scope.btnEliminar = function() {
+			$location.url('/EliminarCliente');
+		}	
 	
 });
