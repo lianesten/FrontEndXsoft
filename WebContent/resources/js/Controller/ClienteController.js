@@ -6,7 +6,6 @@ appClientes.controller('ClienteControl', function($scope, $http,$location,Servic
 	$scope.buscar = function(){
 	    //$http.get("http://localhost:8080/FrontEndXsoft/clientes.json")
 	    //.success(function(response) {$scope.names = response.clientes;});
-
 		$scope.cliente=ServicioCliente.buscarCliente(/*$scope.numeroIdCliente*/);
 		console.log($scope.cliente);
 	}
