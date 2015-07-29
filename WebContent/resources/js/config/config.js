@@ -8,5 +8,9 @@ appClientes.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'pages/login.html', 
 		controller : 'contLogin'
 	});
-	console.log('llama el archivo de configuracion');
+	
+	$routeProvider.when('/PrincipalAdmin', {
+		templateUrl : 'pages/VistaAdmin.html', 
+		controller : 'contAdmin'
+	});
 } ]);

@@ -1,5 +1,4 @@
 
-//Se crea el modulo y se le inyecta ngRoute que nos permite tener varias vistas
 var appClientes = angular.module('XsoftFrontend');
 
 
@@ -13,14 +12,21 @@ appClientes.controller('contLogin', function($scope, $location, ServiceLogin) {
 		    	
 		    	ServiceLogin.validar($scope.username, $scope.password).success(function(data){
 		    		console.log(data);
-//		    		if(data != ''){
-//		    			//alert(data);
-//		    			$scope.nombreUsuario = '';
-//		    			$scope.pws = '';
-//		    			
-//		    			return;
-//		    		}
-		    		//$location.url('/Clientes');
+		    		if(data != ''){
+		    			if(data.tipo=="Error"){
+			    			$scope.username = '';
+			    			$scope.password = '';
+			    			return;
+		    			}else if (data.tipo=="Login"){
+			    			if(data.tipoUsuario=="Admin"){
+			    				$location.url('/PrincipalAdmin');
+			    			}else if(data.tipoUsuario=="Secre"){
+			    				$location.url('/');
+			    			}else{
+			    				$location.url('/');
+			    			}
+			    		}
+		    		}
 		    	});
 		        
 		    };
