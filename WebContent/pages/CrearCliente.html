@@ -1,0 +1,90 @@
+
+<div class="header clearfix">
+	<nav>
+		<ul class="nav nav-pills pull-right">
+			<li role="presentation" class="active"><button type="button"
+					class="btn btn-primary" ng-click="btnInicio()">Inicio</button></li>
+			<li>
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button"
+						id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						Clientes <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a ng-click="btnBuscar()">Buscar</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a ng-click="btnCrear()">Crear</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a ng-click="btnEditar()">Editar</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a ng-click="btnEliminar()">Eliminar</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button"
+						id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						Ventas <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a ng-click="">Buscar</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a ng-click="">Crear</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a ng-click="">Editar</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a ng-click="">Eliminar</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<h3 class="text-muted">Xsoft - Proyecto Ingenieria web</h3>
+</div>
+<h1 class="text-center">:::Crear Cliente:::</h1>
+
+<div class="container">
+	<h2>Llenar los datos a continuacion para crear un nuevo cliente:</h2>
+	<form role="form" ng-submit="crearCliente()">
+		<div class="form-group">
+			<label for="identificacionCliente">Identificación:</label> <input
+				type="text" class="form-control" id="identificacionCliente"
+				placeholder="Ingresa el numero de identificación del cliente"
+				required="required" ng-model="identificacionNuevoCliente">
+		</div>
+		<div class="form-group">
+			<label for="nombres">Nombres:</label> <input type="text"
+				class="form-control" id="nombres"
+				placeholder="Ingresa el nombre del cliente" required="required" ng-model="nombreNuevoCliente">
+		</div>
+		<div class="form-group">
+			<label for="apellidos">Apellidos:</label> <input type="text"
+				class="form-control" id="apellidosCliente"
+				placeholder="Ingresa los apellidos  del cliente" required="required" ng-model="apellidoNuevoCliente">
+		</div>
+		<div class="form-group">
+			<label for="telefonoFijoCliente">Telefono fijo:</label> <input
+				type="text" class="form-control" id="telefonoFijoCliente"
+				placeholder="Ingresa el teléfono fijo  del cliente" ng-model="telefonoFijoNuevoCliente">
+		</div>
+		<div class="form-group">
+			<label for="telefonoMovilCliente">Telefono Movil:</label> <input
+				type="text" class="form-control" id="telefonoMovilCliente"
+				placeholder="Ingresa el teléfono móvil  del cliente" ng-model="telefonoMovilNuevoCliente">
+		</div>
+		<div class="form-group">
+			<label for="email">E-mail:</label> <input type="text"
+				class="form-control" id="email"
+				placeholder="Ingresa el correo electronico  del cliente" ng-model="emailNuevoCliente">
+		</div>
+		<div class="form-group">
+			<label for="direccion">Dirección:</label> <input type="text"
+				class="form-control" id="direccionCliente"
+				placeholder="Ingresa la dirección de residencia  del cliente" ng-model="direccionNuevoCliente">
+		</div>
+		<button type="submit" class="btn btn-primary">Guardar Cliente</button>
+	</form>
+</div>
